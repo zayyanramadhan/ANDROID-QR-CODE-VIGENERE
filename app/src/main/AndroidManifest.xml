@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zayyan.ruangbacafasilkom">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.PinjamPJGActivity"></activity>
+
+        <receiver
+            android:name=".activity.MyReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activity.ScanBukuActivity" />
+        <activity android:name=".activity.KunjunganPtgActivity" />
+        <activity android:name=".activity.KembaliActivity" />
+        <activity android:name=".activity.KembaliPtgActivity" />
+        <activity android:name=".activity.PinjamPtgActivity" />
+        <activity android:name=".activity.MainPtgActivity" />
+        <activity android:name=".activity.PinjamActivity" />
+        <activity
+            android:name=".activity.BukuActivity"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".activity.QrscanActivity"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".activity.SignupActivity"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="userPortrait" />
+        <activity
+            android:name=".activity.SplashscreenActivity"
+            android:screenOrientation="userPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="userPortrait" />
+    </application>
+
+</manifest>

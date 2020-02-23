@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFasilkom"
+    android:padding="10dp"
+    tools:context=".activity.QrscanActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/upnv"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Ruang Baca \n Fakultas Ilmu Komputer"
+                android:textColor="@color/colorFasilkom"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/zxing_barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/cv"
+        android:layout_above="@+id/switch_flashlight"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        app:zxing_scanner_layout="@layout/custom_barcode_scanner"></com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+    <Button
+        android:id="@+id/switch_flashlight"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Hidupkan Flash"
+        android:background="@drawable/btn_rounded_corner"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/purista_bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="switchFlashlight"/>
+
+</RelativeLayout>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/book"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="240dp"
+        android:elevation="6dp"
+        android:src="@drawable/book2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/textSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ruang Baca"
+            android:textColor="@android:color/white"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zayyan"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="6dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Mahasiswa"
+            android:textColor="@android:color/white"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Zayyan"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorFasilkom"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/menubuku"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:clickable="true"
+                        android:layout_marginBottom="4dp"
+                        android:src="@drawable/book2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Riwayat Pinjam"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorFasilkom"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="25dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:clickable="true"
+                        android:id="@+id/scanner"
+                        android:layout_marginBottom="4dp"
+                        android:src="@drawable/qrscan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Scan Buku"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorFasilkom"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="20dp">
+
+                    <ImageView
+                        android:id="@+id/pinjam"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:clickable="true"
+                        android:layout_marginBottom="4dp"
+                        android:src="@drawable/pinjambuku" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Pinjam Buku"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorFasilkom"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="20dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginBottom="4dp"
+                        android:id="@+id/kembali"
+                        android:clickable="true"
+                        android:src="@drawable/kembalibuku" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Kembalikan"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="25dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorFasilkom"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="27dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginBottom="4dp"
+                        android:id="@+id/kunjungan"
+                        android:clickable="true"
+                        android:src="@drawable/kunjungan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Kunjungan"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorFasilkom"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="27dp">
+
+                    <ImageView
+                        android:id="@+id/logout"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginBottom="4dp"
+                        android:src="@drawable/userlogout"
+                        android:clickable="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Logout"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bgapp"
+        android:layout_width="520dp"
+        android:layout_height="1000dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ruangbacabg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

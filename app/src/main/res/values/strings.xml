@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ruang Baca Fasilkom</string>
+    <string name="turn_on_flashlight">Hidupkan Flash</string>
+    <string name="turn_off_flashlight">Matikan Flash</string>
+    <string name="ruang_baca_nfasilkom">Ruang Baca\nFasilkom</string>
+    <string name="ruang_baca_nfakultas_ilmu_komputer">RUANG BACA\nFAKULTAS ILMU KOMPUTER</string>
+</resources>
